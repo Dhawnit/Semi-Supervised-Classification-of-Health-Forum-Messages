@@ -99,6 +99,7 @@ with open("Unspervised.txt") as f:
 	for line in f:
 		x_train.append(line.strip())
 
+# OutputSemiSupervisedLabels_CNN.txt  	==> Labels predicted by CNN
 with open("UnsupervisedLabels_DNN.txt") as f:
 	for line in f:
 		category = check(line.strip())
@@ -236,7 +237,6 @@ history = model.fit(train_vecs, y_train,
                     )
 
 # LabelList = ['SOCL', 'DEMO', 'FAML', 'PREG', 'GOAL', 'TRMT', 'DISE']
-model.save('my_model.h5') # creates a HDF5 file 'my_model.h5'
 
 # prediction = model.predict(test_vecs)
 # prediction = prediction.tolist()

@@ -130,6 +130,7 @@ y_test = labels_test
 # test_vecs = getVecs(model, x_test, 800, 'Test')
 # print (test_vecs.shape)
 
+
 # Getting document vectors using count vectorizer and tf-idf 
 # count vectorizer
 count_vect = CountVectorizer()
