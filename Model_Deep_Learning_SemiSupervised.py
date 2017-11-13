@@ -99,7 +99,7 @@ with open("Unspervised.txt") as f:
 	for line in f:
 		x_train.append(line.strip())
 
-with open("UnsupervisedLabels.txt") as f:
+with open("UnsupervisedLabels_DNN.txt") as f:
 	for line in f:
 		category = check(line.strip())
 		y_train.append(category)
